@@ -1,5 +1,5 @@
 document.getElementById("blog-button").addEventListener("click", function () {
-  window.location.href = "../BlogPage/index.html";
+  window.location.href = "../BlogPage/index1.html";
 });
 
 const date = new Date();
