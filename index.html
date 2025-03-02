@@ -11,7 +11,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-slate-100">
+  <body id="main-body" class="bg-slate-100">
     <header class="w-10/12 mx-auto pt-5">
       <nav>
         <div
@@ -25,9 +25,10 @@
           </div>
           <div class="flex-none gap-4">
             <button class="btn rounded-2xl text-lg">
-              <img class="w-5 md:w-7" src="./assets/checkbox.png" alt="" /> 23
+              <img class="w-5 md:w-7" src="./assets/checkbox.png" alt="" />
+              <span id="count-increased">23</span>
             </button>
-            <button class="btn rounded-full">
+            <button id="theme-btn" class="btn rounded-full">
               <img class="w-8 h-8" src="./assets/theme-btn.png" alt="" />
             </button>
           </div>
@@ -37,10 +38,10 @@
 
     <main>
       <section>
-        <div class="flex w-10/12 mx-auto gap-6 items-start ">
+        <div class="flex w-10/12 mx-auto gap-6 items-start">
           <!-- left-section -->
           <!-- top-section -->
-                     <div class="w-3/4 bg-slate-50 p-6 rounded-md cursor-pointer">
+          <div class="w-3/4 bg-slate-50 p-6 rounded-md cursor-pointer">
             <div class="flex items-center justify-between gap-4">
               <div
                 class="w-1/4 flex items-center gap-4 bg-slate-100 p-7 shadow-sm md:shadow-md rounded-md"
@@ -50,11 +51,16 @@
                 </div>
                 <div class="flex flex-col items-start">
                   <span>Task Assigned</span>
-                  <span class="text-lg md:text-xl font-bold">05</span>
+                  <span
+                    id="count-decreased"
+                    class="text-lg md:text-xl font-bold"
+                    >06</span
+                  >
                 </div>
               </div>
               <div
-                class="w-2/4 flex items-center gap-4 bg-slate-100 p-10 shadow-sm md:shadow-md rounded-md bg-gradient-to-r from-blue-500 to-blue-300"
+                class="w-2/4 flex items-center gap-4 bg-slate-100 p-8 shadow-sm md:shadow-md rounded-md bg-gradient-to-r from-blue-500 to-blue-300"
+                id="blog-button"
               >
                 <div class="w-14 text-center">
                   <img src="./assets/board.png" alt="" />
@@ -70,7 +76,7 @@
                 <div class="p-3 rounded-full bg-slate-50">
                   <img src="./assets/calender.png" alt="" />
                 </div>
-                <div class="flex flex-col items-start">
+                <div id="fix-date" class="flex flex-col items-start">
                   <span>Web,</span>
                   <span class="text-lg md:text-xl font-bold">Jul 28 2025</span>
                 </div>
@@ -81,7 +87,10 @@
               <!-- card-1 -->
               <div class="bg-slate-100 p-6 shadow-sm rounded-lg">
                 <span class="p-2 bg-white rounded-lg">ShopEase</span>
-                <h1 class="font-medium text-sm md:text-lg lg:text-xl my-4">
+                <h1
+                  id="title-btn1"
+                  class="font-medium text-sm md:text-lg lg:text-xl my-4"
+                >
                   Fix Mobile Button Issue
                 </h1>
                 <p class="p-4 bg-white mb-4 text-gray-400 rounded-md truncate">
@@ -95,19 +104,24 @@
                     <span class="text-gray-500">Deadline</span>
                     <span class="text-sm font-medium">21 March 2025</span>
                   </div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn1" class="btn btn-primary total-btn">
+                    Completed
+                  </button>
                 </div>
               </div>
               <!-- card-2 -->
               <div class="bg-slate-100 p-6 shadow-sm rounded-lg">
-                <span class="p-2 bg-white rounded-lg">ShopEase</span>
-                <h1 class="font-medium text-sm md:text-lg lg:text-xl my-4">
-                  Fix Mobile Button Issue
+                <span class="p-2 bg-white rounded-lg">CloudSync</span>
+                <h1
+                  id="title-btn2"
+                  class="font-medium text-sm md:text-lg lg:text-xl my-4"
+                >
+                  Add Dark Mode
                 </h1>
                 <p class="p-4 bg-white mb-4 text-gray-400 rounded-md truncate">
-                  Debug using Chrome <br />
-                  DevTools, check for overlapping elements, and ensure onClick
-                  works properly
+                  Store the user's preference in <br />
+                  localStorage, update CSS variables dynamically, and apply a
+                  smooth transition effect.
                 </p>
                 <hr class="divide-dotted my-2" />
                 <div class="flex gap-8">
@@ -115,19 +129,24 @@
                     <span class="text-gray-500">Deadline</span>
                     <span class="text-sm font-medium">21 March 2025</span>
                   </div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn2" class="btn btn-primary total-btn">
+                    Completed
+                  </button>
                 </div>
               </div>
               <!-- card-3 -->
               <div class="bg-slate-100 p-6 shadow-sm rounded-lg">
-                <span class="p-2 bg-white rounded-lg">ShopEase</span>
-                <h1 class="font-medium text-sm md:text-lg lg:text-xl my-4">
-                  Fix Mobile Button Issue
+                <span class="p-2 bg-white rounded-lg">SwiftPay</span>
+                <h1
+                  id="title-btn3"
+                  class="font-medium text-sm md:text-lg lg:text-xl my-4"
+                >
+                  Optimize Home page 
                 </h1>
                 <p class="p-4 bg-white mb-4 text-gray-400 rounded-md truncate">
                   Debug using Chrome <br />
                   DevTools, check for overlapping elements, and ensure onClick
-                  works properly
+                  works properly and ensure onClick works properly
                 </p>
                 <hr class="divide-dotted my-2" />
                 <div class="flex gap-8">
@@ -135,14 +154,19 @@
                     <span class="text-gray-500">Deadline</span>
                     <span class="text-sm font-medium">21 March 2025</span>
                   </div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn3" class="btn btn-primary total-btn">
+                    Completed
+                  </button>
                 </div>
               </div>
               <!-- card-4 -->
               <div class="bg-slate-100 p-6 shadow-sm rounded-lg">
-                <span class="p-2 bg-white rounded-lg">ShopEase</span>
-                <h1 class="font-medium text-sm md:text-lg lg:text-xl my-4">
-                  Fix Mobile Button Issue
+                <span class="p-2 bg-white rounded-lg">Meta</span>
+                <h1
+                  id="title-btn4"
+                  class="font-medium text-sm md:text-lg lg:text-xl my-4"
+                >
+                  Add new emoji 🤲
                 </h1>
                 <p class="p-4 bg-white mb-4 text-gray-400 rounded-md truncate">
                   Debug using Chrome <br />
@@ -155,14 +179,19 @@
                     <span class="text-gray-500">Deadline</span>
                     <span class="text-sm font-medium">21 March 2025</span>
                   </div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn4" class="btn btn-primary total-btn">
+                    Completed
+                  </button>
                 </div>
               </div>
               <!-- card-5 -->
               <div class="bg-slate-100 p-6 shadow-sm rounded-lg">
-                <span class="p-2 bg-white rounded-lg">ShopEase</span>
-                <h1 class="font-medium text-sm md:text-lg lg:text-xl my-4">
-                  Fix Mobile Button Issue
+                <span class="p-2 bg-white rounded-lg">Google LLC</span>
+                <h1
+                  id="title-btn5"
+                  class="font-medium text-sm md:text-lg lg:text-xl my-4"
+                >
+                  Integrate OpenAI API
                 </h1>
                 <p class="p-4 bg-white mb-4 text-gray-400 rounded-md truncate">
                   Debug using Chrome <br />
@@ -175,14 +204,19 @@
                     <span class="text-gray-500">Deadline</span>
                     <span class="text-sm font-medium">21 March 2025</span>
                   </div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn5" class="btn btn-primary total-btn">
+                    Completed
+                  </button>
                 </div>
               </div>
               <!-- card-6 -->
               <div class="bg-slate-100 p-6 shadow-sm rounded-lg">
-                <span class="p-2 bg-white rounded-lg">ShopEase</span>
-                <h1 class="font-medium text-sm md:text-lg lg:text-xl my-4">
-                  Fix Mobile Button Issue
+                <span class="p-2 bg-white rounded-lg">Glassdoar</span>
+                <h1
+                  id="title-btn6"
+                  class="font-medium text-sm md:text-lg lg:text-xl my-4"
+                >
+                  Improve Job searching
                 </h1>
                 <p class="p-4 bg-white mb-4 text-gray-400 rounded-md truncate">
                   Debug using Chrome <br />
@@ -195,7 +229,9 @@
                     <span class="text-gray-500">Deadline</span>
                     <span class="text-sm font-medium">21 March 2025</span>
                   </div>
-                  <button class="btn btn-primary">Completed</button>
+                  <button id="btn6" class="btn btn-primary total-btn">
+                    Completed
+                  </button>
                 </div>
               </div>
             </div>
@@ -208,10 +244,12 @@
                 <img class="w-4 h-4" src="./assets/activity.png" alt="" />
                 <span class="text-lg md:text-xl">Activity Log</span>
               </div>
-              <button class="btn btn-primary text-lg font-bold">Clear History</button>
+              <button id="clear-btn" class="btn btn-primary text-lg font-bold text-nowrap">
+                Clear History
+              </button>
             </div>
-            </div>
-          
+            <div id="history-title" class="space-y-2"></div>
+          </div>
         </div>
       </section>
     </main>
