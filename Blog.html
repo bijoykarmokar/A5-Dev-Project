@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog html</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100">
+
+    <header class="w-10/12 mx-auto pt-5">
+        <nav>
+            <div class="navbar bg-gray-50 p-3 mt-3 mb-5 rounded-lg shadow-md">
+                <div class="flex-1">
+                    <img class="w-8 md:w-12 lg:w-14" src="./assets/logo.png" alt="">
+                  <p class="text-2xl md:text-3xl lg:text-4xl">Dev<span class=" font-bold">Board</span></p>
+                </div>
+                <div class="flex-none gap-4">
+                    <button class="btn btn-primary text-xl font-bold">Back To Desk</button>
+                </div>
+              </div>
+              <h1 class="text-center text-xl md:text-2xl lg:text-3xl font-bold">Blogs</h1>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+      <div class=" bg-gray-50 p-5 mt-6 mb-5 w-10/12 mx-auto">
+        <!-- Question-1  -->
+        <p class="text-xl font-bold py-2">Question-1: What are the different ways to select an element in the DOM?</p>
+        <hr class="py-2">
+        <ol>
+            <title>Selecting Elements in the DOM With Javascript</title>
+            <li> document. getElementById()</li>
+            <li> document. getElementsByClassName()</li>
+            <li> document. getElementsByTagName()</li>
+            <li> document. querySelector() & document. querySelectorAll()</li>
+        </ol>
+      </div>
+       <!-- Question-2  -->
+      <div class=" bg-gray-50 p-5 mt-6 mb-5 w-10/12 mx-auto">
+              
+        <p class="text-xl font-bold py-2">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+
+        </p>
+        <hr class="py-2">
+        <p>In JavaScript, "innerHTML" retrieves the complete HTML content within an element, including tags, while "innerText" only retrieves the visible text content of an element (ignoring HTML tags), and "textContent" retrieves all text content within an element, including hidden text, but without interpreting any HTML tags</p>
+      </div>
+       <!-- Question-3  -->
+      <div class=" bg-gray-50 p-5 mt-6 mb-5 w-10/12 mx-auto">
+              
+        <p class="text-xl font-bold py-2">Question-3: What is event delegation in the DOM?
+
+        </p>
+        <hr class="py-2">
+        <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. It allows us to attach a single event listener for elements that exist now or in the future.</p>
+      </div>
+       <!-- Question-4  -->
+      <div class=" bg-gray-50 p-5 mt-6 mb-5 w-10/12 mx-auto">
+              
+        <p class="text-xl font-bold py-2">Question-4: What is event bubbling in the DOM?
+
+        </p>
+        <hr class="py-2">
+      <p>Bubbling in the DOM is an event propagation method. It starts with an event triggering on the innermost element and then proceeds to trigger the same event on its parent element and then its parent's parent element and so on.</p>
+      </div>
+       <!-- Question-5  -->
+      <div class=" bg-gray-50 p-5 mt-6 mb-5 w-10/12 mx-auto">
+              
+        <p class="text-xl font-bold py-2">Question-5: How do you create, add, and remove elements using JavaScript?
+
+        </p>
+        <hr class="py-2">
+        <ol>
+            <title> This code creates a new paragraph tag element:</title> 
+            <li>  const para = document. createElement("p");</li>
+            <li>  const node = document. createTextNode("This is a new paragraph.");</li>
+            <li>   para. appendChild(node);</li>
+            <li>  const element = document. getElementById("div1");</li>
+            <li> element. appendChild(para);</li>
+            
+        </ol>  
+           
+      </div>     
+       </section>
+    </main>
+    
+</body>
+</html>
