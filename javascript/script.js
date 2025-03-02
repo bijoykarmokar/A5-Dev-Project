@@ -43,6 +43,9 @@ for (let i = 0; i < totalButton.length; i++) {
     historyDiv.appendChild(par);
     btn.classList.add("disabled");
     btn.disabled = true;
+    if(sectionCount ===0){
+      alert("Contrates!!! You have completed all the task successfully.");
+    }
   });
 }
 document.getElementById("clear-btn").addEventListener("click", function (e) {
